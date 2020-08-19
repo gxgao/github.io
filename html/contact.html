@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>George Xian Gao</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Geo" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Geo", sans-serif}
+
+        @media only screen and (hover: none) and (pointer: coarse)  and 
+        (max-device-width: 900px) {
+            .c-vl { display: none;}
+            #contact-left{margin: auto; width:50%; }
+            #contact-right{margin: auto; width:50%;max-width:480px; }
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body class="c-bgbg">
+    
+    <a href="../index.html" class="c-backFont c-backHoverFont">
+        <i class="fa fa-chevron-left c-white c-backButton c-backHover"> </i>
+    </a>
+    <h1 class="c-white c-fontTitles w3-center">Contact</h1>
+    <br>
+    <br>
+    <!--Top Div-->
+    <div class="w3-container">
+        <!--Left div-->
+        <div id="contact-left"class="w3-container">
+            <div class="c-container">
+                <img  class="c-img"src ="../assets/gxgao.jpg" alt="george"> 
+            </div>
+
+            <p class="c-white c-contactLinkFont"><i class="fa fa-phone c-white"></i> 312-774-0671</p>
+
+            <a class="c-backHover" href='https://linkedin.com/in/george-x-gao'><p class="c-white c-contactLinkFont c-backHover"><i class="fa fa-linkedin c-white "></i> Linkedin</p></a>
+          
+            <a class="c-backHover" href='https://github.com/gxgao' ><p class="c-white c-contactLinkFont c-backHover"><i class="fa fa-github c-white "></i> Github</p> </a> 
+
+            <p class="c-white c-contactLinkFont"><i class="fa fa-envelope c-white"></i> gxgao@andrew.cmu.edu</p>
+         
+        </div>
+
+        <div class="c-vl"></div>
+       
+        <!--Right Div-->
+        <div id="contact-right" class="w3-container c-container c-paraBlueBg">
+            <p class="c-paraFont">Lorem ipsum dolor sit amet, consectetur 
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                 exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                 consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                  occaecat cupidatat non proident, sunt in culpa qui officia 
+                  deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <!--Contact Form-->
+
+    <div data-aos="zoom-in"  >
+        <div class="w3-container c-contactContainer">
+            <br>
+            <form action="mailto:gxgao@andrew.cmu.edu" method="post" enctype="text/plain">
+          
+              <label for="fname" class="c-white">First Name*</label>
+              <input type="text" id="fname" class="c-whiteBg" name="firstname" required placeholder="Your name..">
+          
+              <label for="lname" class="c-white">Last Name*</label>
+              <input type="text" id="lname" class="c-whiteBg" name="lastname" required placeholder="Your last name..">
+          
+              <label for="email" class="c-white">Email*</label>
+              <input type="text" id="email" class="c-whiteBg" name="email" placeholder="Email">
+
+              <label for="company" class="c-white">Company</label>
+              <input type="text" id="company" class="c-whiteBg" name="company" required placeholder="Company">
+          
+              <label for="subject" class="c-white">Message*</label>
+              <textarea id="subject" class="c-whiteBg" name="subject" required placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+            <br>
+          </div>
+            
+    </div>
+    <script>
+        AOS.init();
+    </script>  
+</body>
+
+</html>
