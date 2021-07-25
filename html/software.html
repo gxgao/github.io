@@ -11,15 +11,13 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Geo", sans-serif}
-        html{
-            scroll-behavior:smooth;
-        }   
+            
         .c-imageDescriberS{
         border-radius: 20px;
         margin-top:10px;
         margin-right:5vw;
         margin-left: calc(var(--sideLength) + 10%);
-        margin-bottom:200px; 
+        margin-bottom:650px; 
         max-width: 35%; 
         }
 
@@ -44,6 +42,12 @@
             Skip Around
         </p> 
         <div class='c-smallerParaFont'>
+            <p class='c-gitHub'>   
+                <a href='#Malloc'>- Malloc Implementation</a>
+            </p>
+            <p class='c-gitHub'>   
+                <a href='#Proxy'>- Proxy Server</a>
+            </p>
             <p class='c-gitHub'>
                 <a href='#Stock_Analyzer'>- Stock Analyzer</a>
             </p>
@@ -60,6 +64,73 @@
     </div>
 
     <div class='c-white w3-center'>
+        <!-- Project Malloc 213-->
+        <div data-aos="zoom-in">
+            <p class='c-subSubtitle c-gitHubLinkFormating'>
+            <a id='Malloc'>Malloc Implementation (15-213)</a></p>
+        </div>
+            <!--About Page-->
+        <div data-aos="zoom-in"> 
+            <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
+            <div class='c.paraFont c-paraContainer c-midBlueBg'>
+                
+                <p class='c-smallerParaFont'>
+                    Written in C, I created an implementation of Malloc to 
+                    cement the ideas of dynamic memory allocation during my
+                    Introduction to Systems Course (15-213). Because of this, my
+                    code is not publicly avaiable on my personal Github. If you
+                    are interested in the code, please contact me here:
+                    <a href = "mailto: gxgao@andrew.cmu.edu">gxgao@andrew.cmu.edu</a>
+                    <br> 
+                    My implementation follows a better-fit algorithm, and utilizes
+                    a combination of segregated free lists, implicit lists and 
+                    doubly linked lists in order
+                    to acheive a good balance between througput and memory 
+                    utilization. <br> 
+                    The implementation utilized header and bit manipulation to
+                    support miniblocks, allowing for payloads of 8 bytes in size. 
+                    Metadata stored in the headers also allowed me to coalesce
+                    blocks during free operations as well as splitting free blocks
+                    during allocation in order to improve memory 
+                    utilization. 
+                </p>
+            </div>
+        </div>
+        <!-- Project Malloc 213-->
+        <div data-aos="zoom-in">
+            <p class='c-subSubtitle c-gitHubLinkFormating'>
+            <a id='Proxy'>Proxy Server (15-213)</a></p>
+        </div>
+            <!--About Page-->
+        <div data-aos="zoom-in"> 
+            <p class='c-subSubtitle c-gitHubLinkFormating'>About</p>
+            <div class='c.paraFont c-paraContainer c-midBlueBg'>
+                
+                <p class='c-smallerParaFont'>
+                    Written in C, I created an implementation of a proxy server to 
+                    cement the ideas of network programming and multithreading
+                    during my Introduction to Systems Course (15-213).
+                    Because of this, my
+                    code is not publicly avaiable on my personal Github. If you
+                    are interested in the code, please contact me here:
+                    <a href = "mailto: gxgao@andrew.cmu.edu">gxgao@andrew.cmu.edu</a>
+                    <br> 
+                    My implementation supports HTTP Get requests only.
+                    <br> 
+                    The implementation utilizes network programming ideas
+                    connecting clients to sockets, listening to servers, and 
+                    more.
+                    <br>
+                    It utilizes multithreading with pthreads in order to service
+                    multiple clients at a time. In order to keep the code 
+                    race condition free, mutexes were used to lock access of 
+                    common resources.
+                    <br>
+                    Common resources mainly consisted of a LRU cache, that cached
+                    client's request. 
+                </p>
+            </div>
+        </div>
         <!-- Project 1 Term Project-->
         <div data-aos="zoom-in">
             <p class='c-subSubtitle c-gitHubLinkFormating'>
